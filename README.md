@@ -79,8 +79,10 @@ void merge(int *arr, int l, int m, int r, int &c, int &m_p) {
 
 	int *L = new int[n1];
 	int *R = new int[n2];
-	for (i = 0; i < n1; L[i] = arr[l + i], i++);
-	for (j = 0; j < n2;R[j] = arr[m + 1 + j], j++);
+	for (i = 0; i < n1; L[i] = arr[l + i], i++)
+		;
+	for (j = 0; j < n2; R[j] = arr[m + 1 + j], j++)
+		;
 	i = 0;
 	j = 0;
 	k = l;
